@@ -2,7 +2,7 @@ import express from "express";
 
 const app = express();
 
-app.get("/track", async (req, res) => {
+app.get("/", async (req, res) => {
   // Get visitor IP
   const forwarded = req.headers["x-forwarded-for"];
   const ip = forwarded
